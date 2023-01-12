@@ -1,0 +1,25 @@
+﻿{
+  "shaders": {
+    "canvas2d": {
+      "id": "canvas2d",
+      "vsPath": "BaseAssets/Shaders/canvas2d_vs.sc",
+      "fsPath": "BaseAssets/Shaders/canvas2d_fs.sc"
+    }
+  },
+  "textures": {
+    "helloworld": {
+      "id": "boologo",
+      "path": "BaseAssets/Textures/boologo.png"
+    }
+  },
+  "spriteAtlases": {
+    "uiSheet": {
+      "id": "uiSheet",
+      "path": "BaseAssets/SpriteAtlases/ui_sheet.png",
+      "regions": {
+        "panel": {"X": 16, "Y": 21, "Width": 57, "Height": 61},
+        "circle": {"X": 100, "Y": 37, "Width": 24, "Height": 24}
+      }
+    }
+  }
+}

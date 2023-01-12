@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\Boo.Common\Boo.Common.csproj" />
+    <ProjectReference Include="..\Boo.Native\Boo.Native.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Content\BaseAssets\Textures\boologo.bnb" />
+    <EmbeddedResource Include="Content\BaseAssets\Textures\boologo.bnb" />
+    <None Remove="Content\BaseAssets\Shaders\canvas2d_GL.bnb" />
+    <EmbeddedResource Include="Content\BaseAssets\Shaders\canvas2d_GL.bnb" />
+    <None Remove="Content\BaseAssets\Shaders\canvas2d_D3D.bnb" />
+    <EmbeddedResource Include="Content\BaseAssets\Shaders\canvas2d_D3D.bnb" />
+    <None Remove="Content\BaseAssets\SpriteAtlases\uiSheet.bnb" />
+    <EmbeddedResource Include="Content\BaseAssets\SpriteAtlases\uiSheet.bnb" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <WarningsAsErrors>nullable</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(OS)' == 'Windows_NT' ">
+    <DefineConstants>WINDOWS</DefineConstants>
+  </PropertyGroup>
+</Project>

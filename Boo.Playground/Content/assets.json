@@ -1,0 +1,23 @@
+﻿{
+  "textures": {
+    "helloworld": {
+      "id": "helloworld",
+      "path": "Textures/hello_world.png"
+    },
+    "party": {
+      "id": "party",
+      "path": "Textures/party.png"
+    },
+    "sprite_sheet_char": {
+      "id": "sprite_sheet_char",
+      "path": "Textures/sprite_sheet_char.png"
+    }
+  },
+  "tileSets": {
+    "tileset_numbers": {
+      "id": "tileset_numbers",
+      "path": "TileSets/tileset_numbers.png",
+      "tileSize": 16
+    }
+  }
+}

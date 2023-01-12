@@ -1,0 +1,11 @@
+﻿{
+  "WindowTitle": "Boo",
+  "WindowWidth": 800,
+  "WindowHeight": 600,
+  "WindowMode": "Windowed",
+  "IsMouseVisible": true,
+  "VSync": true,
+  "IsWindowResizable": true,
+  "DesiredFrameRate": 60,
+  "GraphicsApi": "Auto"
+}

@@ -1,0 +1,43 @@
+﻿{
+  "Tilemaps": [
+    {
+      "TileSet": "tileset_numbers",
+      "Tiles": [
+        {"TileIndex": 0,"TileX": 0,"tileY": 0},
+        {"TileIndex": 1,"TileX": 1,"TileY": 0},
+        {"TileIndex": 2,"TileX": 2,"TileY": 0},
+        {"TileIndex": 3,"TileX": 3,"TileY": 0},
+
+        {"TileIndex": 4,"TileX": 0,"TileY": 1},
+        {"TileIndex": 5,"TileX": 1,"TileY": 1},
+        {"TileIndex": 6,"TileX": 2,"TileY": 1},
+        {"TileIndex": 7,"TileX": 3,"TileY": 1},
+
+        {"TileIndex": 8,"TileX": 0,"TileY": 2},
+        {"TileIndex": 9,"TileX": 1,"TileY": 2},
+        {"TileIndex": 10,"TileX": 2,"TileY": 2},
+        {"TileIndex": 11,"TileX": 3,"TileY": 2},
+
+        {"TileIndex": 12,"TileX": 0,"TileY": 3},
+        {"TileIndex": 13,"TileX": 1,"TileY": 3},
+        {"TileIndex": 14,"TileX": 2,"TileY": 3},
+        {"TileIndex": 15,"TileX": 3,"TileY": 3}
+      ]
+    }
+  ],
+  "Sprites": [
+    {
+      "Texture": "party",
+      "X": 480,
+      "Y": 270,
+      "Components": [
+        {
+          "Type": "DirectionalMovement",
+          "Data": {
+            "MovementType": "UpAndDown"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="PowerArgs" Version="3.6.0" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <ContentWithTargetPath Include=".\Builders\Compilation\bgfx_shader.bsh">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>ShaderCompiler\bgfx_shader.bsh</TargetPath>
+    </ContentWithTargetPath>
+  </ItemGroup>
+  
+  <ItemGroup Condition="'$(OS)' == 'Windows_NT'">
+    <ContentWithTargetPath Include=".\Binaries\win-x64\shaderc.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>ShaderCompiler\shaderc.exe</TargetPath>
+    </ContentWithTargetPath>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Boo.Common\Boo.Common.csproj" />
+  </ItemGroup>
+
+</Project>

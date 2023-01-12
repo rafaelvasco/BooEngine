@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NoWarn>8605;8603;8625;</NoWarn>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+      <_Parameter1>Boo.Engine</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+  
+  <ItemGroup Condition="'$(OS)' == 'Windows_NT'">
+    <ContentWithTargetPath Include=".\Runtime\win-x64\bgfx.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>bgfx.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include=".\Runtime\win-x64\SDL2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>SDL2.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include=".\Runtime\win-x64\SDL2_mixer.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>SDL2_mixer.dll</TargetPath>
+    </ContentWithTargetPath><ContentWithTargetPath Include=".\Runtime\win-x64\SDL2_ttf.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>SDL2_ttf.dll</TargetPath>
+    </ContentWithTargetPath>
+  </ItemGroup>
+  
+</Project>
